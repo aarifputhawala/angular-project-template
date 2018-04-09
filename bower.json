@@ -1,0 +1,21 @@
+{
+  "name": "gulpdemo",
+  "description": "Gulp Demo",
+  "main": "index.js",
+  "authors": [
+    "Aarif Puthawala"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aarifputhawala/angular-project-template",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.9"
+  }
+}

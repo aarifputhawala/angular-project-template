@@ -4,12 +4,12 @@
   "description": "Gulp Demo",
   "author": "Aarif Puthawala",
   "main": "index.js",
-  "dependencies": {
-    "angular": "^1.6.9"
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.2",
     "gulp-jshint": "^2.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.0",
@@ -17,7 +17,10 @@
     "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
+    "run-sequence": "^2.2.1",
+    "wiredep": "^4.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
