@@ -7,6 +7,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-bower-src": "^0.1.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-inject": "^4.3.2",
@@ -18,7 +19,6 @@
     "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
-    "main-bower-files": "^2.13.1",
     "run-sequence": "^2.2.1",
     "wiredep": "^4.0.0"
   },

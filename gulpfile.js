@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     inject = require('gulp-inject'),
     webserver = require('gulp-webserver'),
     runSequence = require('run-sequence'),
-    bowerMain = require('main-bower-files');
+    bowerSrc = require('gulp-bower-src');
 
 var paths = {
     html: 'app/**/*.html',
@@ -18,8 +18,8 @@ var paths = {
     sass: 'app/scss/**/*.scss',
     dist: 'dist',
     distIndex: 'dist/index.html',
-    distCSS: 'dist/**/*.css',
-    distJS: 'dist/**/*.js',
+    distCSS: ['dist/**/*.css', '!dist/bower_components/**/*.js'],
+    distJS: ['dist/**/*.js', '!dist/bower_components/**/*.js'],
     build: 'build'
 };
 
@@ -41,7 +41,7 @@ gulp.task('js', function () {
 
 gulp.task('bower', function () {
     // gulp.src(paths.dist + '/bower_components').pipe(clean());
-    return gulp.src(bowerMain({ base: 'bower_components' }))
+    return bowerSrc()
         .pipe(gulp.dest(paths.dist + '/bower_components'));
 });
 
